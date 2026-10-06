@@ -1,0 +1,24 @@
+CREATE VIEW  olist_customers_dataset AS
+SELECT customer_id,customer_city,customer_state FROM olist_customers_dataset;
+
+CREATE VIEW olist_order_items_dataset AS 
+SELECT order_id,order_items_id,product_id,seller_id,price FROM olist_order_items_dataset;
+
+CREATE VIEW olist_order_payment_dataset AS
+SELECT order_id,payment_type,payment_value FROM olist_order_payment_dataset;
+
+CREATE VIEW olist_order_review_dataset AS
+SELECT review_id,order_id,review_score FROM olist_order_review_dataset;
+
+CREATE VIEW olist_orders_dataset AS
+SELECT order_id,customer_id,order_status,order_purchase_timestamp,order_delivered_customer_date,
+order_estimated_delivery_date FROM olist_ordrs_dataset;
+
+CREATE VIEW olist_products_dataset AS
+SELECT product_id,product_category_name FROM olist_products_dataset;
+
+CREATE VIEW olist_sellers_dataset AS
+SELECT seller_id,seller_city,seller_state FROM olist_sellers_dataset;
+
+CREATE VIEW product_category_name_translation AS
+SELECT product_category_name,product_category_name_english FROM product_category_name_translation;
